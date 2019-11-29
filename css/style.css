@@ -7756,7 +7756,7 @@ header {
           position: relative; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; } }
+              font-size: 30px; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
           font-size: 20px;
           line-height: 1.5;
@@ -8697,10 +8697,16 @@ textarea.form-control {
     color: #121212;
     font-style: italic; }
 
-iframe {
-  -webkit-filter: grayscale(70%);
-filter: grayscale(70%);
-}
+    @media (max-width: 767.98px) {
+      .text-center {
+      text-align: center !important;
+      }
+      iframe {
+        width: 350px;
+        height: 400px;
+
+      } }
+
 
 #ftco-loader {
   position: fixed;
