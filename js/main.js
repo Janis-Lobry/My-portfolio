@@ -22,7 +22,7 @@ $(document).ready(function($) {
 
 	// loader
 	var loader = function() {
-		setTimeout(function() { 
+		setTimeout(function() {
 			if($('#ftco-loader').length > 0) {
 				$('#ftco-loader').removeClass('show');
 			}
@@ -87,9 +87,9 @@ $(document).ready(function($) {
 		})
 	};
 	burgerMenu();
-	
+
 	var counter = function() {
-		
+
 		$('#section-counter').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
@@ -106,7 +106,7 @@ $(document).ready(function($) {
 					  }, 7000
 					);
 				});
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -119,7 +119,7 @@ $(document).ready(function($) {
 		$('.ftco-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -141,9 +141,9 @@ $(document).ready(function($) {
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -182,7 +182,7 @@ $(document).ready(function($) {
     fixedContentPos: false
   });
 
-   
+
    $('#appointment_date').datepicker({
 	  'format': 'm/d/yyyy',
 	  'autoclose': true
@@ -200,7 +200,25 @@ $(document).ready(function($) {
 
 	};
 	pageProgress();
+// Smooth scroll up for page anchor
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
 
+        $('#back-to-top').tooltip('show');
 
 });
-
+});
