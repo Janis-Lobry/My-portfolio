@@ -9906,12 +9906,15 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
+<<<<<<< HEAD
 
 header {
   position: fixed !important;
   background-color: #121212;
   border-bottom: solid 1px #2f89fc;
 }
+=======
+>>>>>>> 74709d1c96fcefa9ef3276b50678f8d5df515d6b
 
 @media (min-width: 1200px) {
   .text-xl-left {
@@ -10291,6 +10294,7 @@ h1, h2, h3, h4, h5,
   width: 30%;
   opacity: 0;
 }
+<<<<<<< HEAD
 
 #colorlib-main-nav .colorlib-table .img:after {
   position: absolute;
@@ -10302,6 +10306,19 @@ h1, h2, h3, h4, h5,
   background: rgba(18, 18, 18, 0.3);
 }
 
+=======
+
+#colorlib-main-nav .colorlib-table .img:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  background: rgba(18, 18, 18, 0.3);
+}
+
+>>>>>>> 74709d1c96fcefa9ef3276b50678f8d5df515d6b
 @media (min-width: 768px) {
   #colorlib-main-nav .colorlib-table .img {
     opacity: 1;
